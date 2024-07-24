@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Personal Website{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'index' %}">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/husain-alshaikhahmed-a6892617b" target="_blank" data-toggle="tooltip" title="My LinkedIn Profile">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/HusainCodes" target="_blank" data-toggle="tooltip" title="My GitHub Profile">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.youtube.com/channel/UCXXXXXXX" target="_blank" data-toggle="tooltip" title="My YouTube Channel">
+                            <i class="fab fa-youtube fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.algoexpert.io" target="_blank" data-toggle="tooltip" title="My AlgoExpert Profile">
+                            <i class="fas fa-code fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Projects
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{% url 'project1' %}">Project 1</a>
+                            <a class="dropdown-item" href="{% url 'project2' %}">Project 2</a>
+                            <a class="dropdown-item" href="{% url 'project3' %}">Project 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Husain Alshaikhahmed. I'm a software engineer proficient in Python and C/C++, with experience in Java, JavaScript, C#, SQL, HTML, and CSS. I am also skilled in Linux and have a passion for coding. I am always eager to expand my skills and enjoy collaborating with other engineers to solve complex problems. I strive to add value to the world through my work and continuously learn from those who have more experience in the field.
+            </p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>2020-2022: Bachelor of Science in Computer Science, Texas State University</li>
+                <li>2020-2022: Minor in Business Administration, Texas State University</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li>2024: Linux Essentials, Linux Professional Institute</li>
+                <li>2024: Azure Data Fundamentals, Microsoft</li>
+                <li>2021: Blockchain Expert, Blockchain Council</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+            <ul>
+                <li>Tech Support Engineer, Eagle Eye Networks</li>
+                <li>2021-2022: Software Application Developer Intern, Texas State University</li>
+                <li>2020-2021: Undergraduate Research Assistant, Texas State University</li>
+                <li>2019-2020: Software Engineer Intern, Nesma</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Husain Alshaikhahmed</p>
+        <div>
+            <a href="https://www.linkedin.com/in/husain-alshaikhahmed-a6892617b" target="_blank" data-toggle="tooltip" title="My LinkedIn Profile">
+                <i class="fab fa-linkedin fa-2x mx-2 text-white"></i>
+            </a>
+            <a href="https://github.com/HusainCodes" target="_blank" data-toggle="tooltip" title="My GitHub Profile">
+                <i class="fab fa-github fa-2x mx-2 text-white"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCXXXXXXX" target="_blank" data-toggle="tooltip" title="My YouTube Channel">
+                <i class="fab fa-youtube fa-2x mx-2 text-white"></i>
+            </a>
+            <a href="https://www.algoexpert.io" target="_blank" data-toggle="tooltip" title="My AlgoExpert Profile">
+                <i class="fas fa-code fa-2x mx-2 text-white"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+</html>

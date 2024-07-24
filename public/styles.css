@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007BFF;
+}
+
+.navbar {
+    margin-bottom: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #343A40;
+    color: white;
+    padding: 1rem 0;
+}
+
+.nav-link {
+    color: #007BFF;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+}
+
+.navbar-toggler {
+    border-color: #007BFF;
+}
+
+.dropdown-item:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.fa-lg, .fa-2x {
+    color: #007BFF;
+}
+
+.fa-lg:hover, .fa-2x:hover {
+    color: #0056b3;
+}
